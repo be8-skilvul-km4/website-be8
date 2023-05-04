@@ -43,3 +43,30 @@ body {
   font-weight: 400;
   border-radius: 10px;
 }
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url('../images/hero banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: aliceblue;
+}
+
+.content h1 {
+  font-size: 6em;
+  margin: 0 auto;
+}
+
+.content p {
+  font-size: 2em;
+  margin: 0 auto;
+}
