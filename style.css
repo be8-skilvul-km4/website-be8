@@ -82,3 +82,52 @@ body {
   height: 300px;
   padding: 10px;
 }
+
+.trending-topics {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.trending-topics h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trending-topics ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.trending-topics li {
+  margin-bottom: 10px;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+}
+
+.topic img {
+  border-radius: 5px;
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.topic a {
+  font-size: 12px;
+  color: #333;
+  text-decoration: none;
+}
+.btn-danger {
+  background-color: var(--pr-color);
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
