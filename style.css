@@ -2,17 +2,24 @@
   --pr-color: #04991c;
 }
 
-body {
+* {
   font-family: 'Poppins', sans-serif;
-  background-color: #d1d1d1;
 }
 
-.nav-link {
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.navbar {
+  background-color: #0058b0; /*ganti warna background*/
+}
+
+.navbar-nav .nav-link {
+  color: #f1f1f1; /*ganti warna text*/
   font-size: 16px;
 }
 
-.nav-link.active {
-  font-weight: 700;
+.navbar-nav .nav-link:hover {
+  color: var(--pr-color);
 }
 
 .button-secondary {
@@ -22,7 +29,7 @@ body {
   color: #fff;
   border: none;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 10px;
 }
 
@@ -30,7 +37,7 @@ body {
   width: 125px;
   height: 40px;
   background-color: transparent;
-  color: #000000;
+  color: #fff;
   border: none;
   font-size: 16px;
   font-weight: 400;
