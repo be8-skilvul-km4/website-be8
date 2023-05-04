@@ -70,3 +70,15 @@ body {
   font-size: 2em;
   margin: 0 auto;
 }
+
+.card {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.img-fluid {
+  max-width: 300px;
+  border-radius: 20px;
+  height: 300px;
+  padding: 10px;
+}
