@@ -1,15 +1,18 @@
 const getData = async () => {
   try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
+
     const response = await fetch(
-      "https://64508d33a3221969114c7374.mockapi.io/artikel"
+      `https://64508d33a3221969114c7374.mockapi.io/artikel/${id}`
     );
     const data = await response.json();
 
     const artikelDiv = document.querySelector(".card.p-4");
 
-    artikelDiv.querySelector("h2").textContent = data[0].judul;
-    artikelDiv.querySelector("img").src = data[0].gambar;
-    artikelDiv.querySelector("p").textContent = data[0].artikel;
+    artikelDiv.querySelector("h2").textContent = data.judul;
+    artikelDiv.querySelector("img").src = data.gambar;
+    artikelDiv.querySelector("p").textContent = data.artikel;
   } catch (error) {
     console.error(error);
   }

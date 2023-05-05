@@ -31,7 +31,7 @@ async function fetchData() {
       cardText.textContent = artikelPreview + " . . .";
 
       const cardLink = document.createElement("a");
-      cardLink.href = "#";
+      cardLink.href = `${window.location.origin}/single-tips/single-tips.html?id=${artikel.id}`;
       cardLink.classList.add("btn", "btn-danger");
       cardLink.textContent = "Selengkapnya";
 
